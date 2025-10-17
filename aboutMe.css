@@ -1,0 +1,139 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif, helvetica;
+}
+.section{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 30px ;
+    box-shadow: 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.section .container{
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
+.container .title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.container .title h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #123;
+}
+
+.container .title h1::after{
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: #123;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+.content{
+    float: left;
+    width: 55%;
+}
+.image-section{
+    float: right;
+    width: 40%;
+}
+/* Image */
+.image-section img{
+    width: 100%;
+    box-shadow: 5px 5px 20px 1px rgba(122, 102, 168, 0.1);
+
+}
+/* Name */
+.content .article .name{
+    text-align: center;
+    font-size: 15px;
+}
+.content .article .name{
+    margin-bottom: 14px;
+    
+}
+/* Title */
+.content .article h5{
+    color: rgb(5, 5, 5);
+    font-size: 15px;
+    line-height: 1.5;
+}
+/* Paragraph Description */
+.content .article p{
+    margin-top: 10px;
+    font-size: 15px;
+    font: bolder;
+    line-height: 1.5;
+    color: #333;
+}
+.content .article .button{
+    margin-top: 50px;
+}
+
+.content .article .button a{
+    color: #f3f3f3;
+    text-decoration: none;
+    box-shadow: 1px 8px 15px 1px rgb(142, 3, 255);
+    font-size: 14px ;
+    font: 600;
+    border-radius: 24px;
+    padding: 9px 25px;
+    background-color: #6f00ff;
+    cursor: pointer;
+    transition: 1s ease;
+    letter-spacing: 1.8px;
+}
+.content .article .button a:hover{
+    color: #ffffff;
+    background-color: #ff00d9;
+    transition: 0.8s ease;
+}
+@media screen and (max-width: 768px ) {
+    .section .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .content{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-section{
+        float: none;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .image-section img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .container .title h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .container .article .button{
+        text-align: center;
+    }
+} 
+    
